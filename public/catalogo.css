@@ -1,0 +1,381 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f9fa;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #F280CA, #44AFF2);
+    padding: 15px;
+}
+
+.logo-1 {
+    width: 150px;
+}
+
+.menulog{
+    display: none;
+}
+.imagen-usuario {
+    display: flex; /* Asegura que los elementos internos estén alineados */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items:center; /* Centra la imagen verticalmente */
+    margin-right: 20px ; /* Margen superior e inferior */
+}
+
+.imagen-usuario img {
+    width: 50px; /* Ajusta el ancho deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+}
+
+
+.logomenu{
+    display: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu-1 ul{
+    list-style: none;
+    display: flex;
+}
+.menu-1 a {
+    font-size: 16px; /* Ajusta este valor según el tamaño que desees */
+    font-weight: bold; /* Opcional: Si deseas que el texto sea más grueso */
+    color: #050000;
+}
+
+.menu-1 li{
+    margin: 0 15px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+a {
+    color: #050000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Slider Styles */
+.swiper {
+    height: 400px;
+    margin: 20px 0;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-txt {
+    width: 50%;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.slide-txt h1 {
+    font-size: 2em;
+    color: #F280CA;
+}
+
+.slide-txt p {
+    margin: 10px 0;
+}
+
+.slide-img{
+    width: 50%;
+    height: 50%;
+}
+
+
+.botones {
+    margin-top: 15px;
+}
+
+.btn-1 {
+    background-color: #44AFF2;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: #296CF2;
+}
+
+.products {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+
+.tabs label {
+    width: 15%;
+    order: 1;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+
+.tabs .tab {
+    order: 99;
+    flex-wrap: 1;
+    width: 100%;
+    display: none;
+    padding-top: 25px;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+    border-bottom: 2px solid #F280CA; /* Color del borde de la tab seleccionada */
+    color: #F280CA; /* Color del texto de la tab seleccionada */
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+/* Product Styles */
+.product {
+    display: flex;
+    justify-content:center;
+    border: 2px solid #44AFF2; /* Cambiado a un borde más grueso y color azul */
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra para profundidad */
+}
+.product-img {
+    width: 30%;
+    text-align: left;
+    position: relative; /* Permite posicionar elementos dentro */
+}
+
+.product-img h4 {
+    position: absolute; /* Posiciona el nombre en la parte superior */
+    top: 10px; /* Ajusta el espacio desde la parte superior */
+    left: 10px; /* Ajusta el espacio desde la izquierda */
+    padding: 5px 7px;
+    line-height: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: white; /* Fondo blanco para el texto */
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+
+.product-img img {
+    width: 50%; /* Asegura que la imagen ocupe todo el espacio */
+    height: auto;
+    margin-left: 40%;
+}
+
+.product-txt {
+    width: 50%;
+    margin-left: 10px;
+    text-align: left;
+    padding: 15px;
+}
+
+.product-txt p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.product-txt span {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn-3 {
+    margin-top: 10px;
+}
+
+.btn-3 a {
+    background-color: #296CF2;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-3 a:hover {
+    background-color: #44AFF2;
+}
+
+/* Info section */
+.info {
+    background-color: #343a40; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 20px; /* Espacio interno */
+    display: flex; /* Usa flexbox para disposición */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.info-img img {
+    width: 150px; 
+}
+
+.info-text {
+    max-width: 600px; 
+    margin: 5%; 
+}
+
+.btn-2 {
+    background-color: #44AFF2; 
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    margin: 15px; 
+    margin-top: 20px; 
+
+}
+.btn-2:hover {
+    background-color: #296CF2;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #0D0D26;
+    color: white;
+    padding: 20px;
+    display: flex; /* Mantiene el diseño en flex */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    justify-content: space-between; /* Espacio entre el mapa y los enlaces */
+}
+
+.footer img {
+    width: 50px; /* Tamaño de las imágenes en el footer */
+    height: 50px; /* Tamaño de las imágenes en el footer */
+}
+
+/* Estilos generales para el contenedor de las redes sociales */
+.socials {
+    display: flex; /* Muestra los elementos en una sola fila */
+    justify-content: space-around; /* Distribuye el espacio entre los iconos */
+    align-items: center; /* Centra verticalmente los iconos */
+    margin: 20px 0; /* Añade algo de margen superior e inferior */
+}
+
+/* Estilos para cada icono social */
+.social, .social1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Ajusta el tamaño del contenedor */
+    height: 60px; /* Ajusta la altura del contenedor */
+    border-radius: 50%; /* Opción para hacer los iconos circulares */
+    overflow: hidden;
+    background-color: #050000; /* Fondo suave para resaltar los iconos */
+}
+
+.social1{
+    width: 120px;
+    height: 120px;
+}
+
+
+.mapa {
+    height: 300px; /* Mantén esta altura ajustada */
+    width: 50%; /* Ajusta el ancho del mapa */
+    margin-bottom: 20px; /* Espacio inferior para separar del contenido siguiente */
+    font-weight: 400; /* Elimina el uso de porcentaje, ya que no es válido para font-weight */
+}
+
+.links {
+    margin-left: 20px; /* Espacio entre el mapa y los enlaces */
+    display: flex;
+    flex-direction: column; /* Alinea los enlaces verticalmente */
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 980px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logomenu{
+        display: none;
+    }
+
+    .menulog img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-1 ul,
+    .menu-2 ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .swiper {
+        height: auto; /* Ajusta la altura en pantallas pequeñas */
+    }
+
+    .slide-info {
+        font-size: 0.9em; /* Reduce el tamaño del texto */
+    }
+
+    .producto {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+    }
+}
